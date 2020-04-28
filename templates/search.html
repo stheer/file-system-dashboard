@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<div id="search-bottom" class="hide">
+
+    <div id="library-search-div">
+        <div id="search-filter-options">
+            <div id="search-dropdown0" class="search-dropdown">
+                <label class="label" for="file-search0">Search By</label>
+                <select id="file-search0" class="file-search top-level">
+                    <option value="" selected disabled hidden></option>
+                    <option value="File Name">File Name</option>
+                    <option value="File Contents">File Contents</option>
+                    <option value="File Type">File Type</option>
+                    <option value="Modified Date">Modified After Date</option>
+                    <option value="Folder">Folder</option>
+                </select>
+                <button id="add-search-filter" disabled>+</button>
+            </div>
+        </div>
+
+        <div id="search-filter-text">
+            <form id="search-query">
+            </form>
+        </div>
+
+        <input type="button" form="search-filter-text" id="execute-query" value="Execute Query" disabled>
+
+    </div>
+
+    <div id="query-results-sql"></div>
+
+</div>
+
+</html>

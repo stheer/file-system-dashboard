@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<div id="library-bottom" class="hide">
+
+    <div id="manipulate-buttons">
+        <button id="create-folder" title="Create Folder" class="create-buttons loadDisable">New Folder</button>
+        <button id="upload-file" title="Upload File" class="create-buttons loadDisable">Upload File</button>
+    </div>
+
+    <h3 id="success-message" class="hide"></h3>
+
+    <div id="forms">
+            <div id="folder-form" class="hide form">
+                    <h3 id="folder-header">Add Sub-Folder</h3>
+                    <input type="text" id="folder-name" class="input" placeholder="folder name">
+                    <button id="add-folder" value="Add" class="input-button" disabled>Add</button>
+                    <button id="close-folder" value="Close" class="close">Close</button><br><br>
+            </div>
+            <div id="file-form" class="hide form">
+                    <h3 id="file-header">Upload File</h3>
+                    <input type="file" id="file-select" class="input" />
+                    <button id="upload" value="Upload" class="input-button" disabled>Upload</button>
+                    <button id="close-file" class="close" value="Close">Close</button><br><br>
+            </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="sub-folder-table">
+        <h4>Sub-Folder</h4>
+        <div id="sub-folder-list"></div>
+        <div id="sub-folder-trash"></div>
+        <button id="delete-folder" class="hide">Trash Folder</button>
+    </div>
+
+    <br>
+
+</div>
+
+
+</html>

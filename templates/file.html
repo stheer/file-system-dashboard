@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% block content %}
+
+<div id="canvas">
+
+    <div id="library-top">
+
+        <pre id="content"></pre>
+
+        <div id="dropdown">
+            <label for="folder-select">Folder Select</label>
+            <select id="folder-select" class="loadDisable" disabled>
+                <option value="" selected disabled hidden></option>
+                <option value="Administrative">Administrative</option>
+                <option value="Development">Development</option>
+                <option value="Communications">Communications</option>
+                <option value="Programs">Programs</option>
+                <option value="Search">Search</option>
+            </select>
+        </div>
+
+    </div>
+
+    {% include 'library.html' %}
+    {% include 'search.html' %}
+
+    <div id="file-div" class="hide">
+        <div id="file-table">
+            <h4 id="doc-title" class="file-header">File Name</h4>
+            <h4 id="doc-type" class="file-header">Type</h4>
+            <h4 id="edit-date" class="file-header">Last Modified</h4>
+
+            <div id="file-list" class="list"></div>
+            <div id="type-list" class="list"></div>
+            <div id="date-list" class="list"></div>
+            <div id="delete-list" class="list"></div>
+
+            <div id="space-entry" class="list"></div>
+
+            <div id="move-down-file" class="list"></div>
+            <div id="move-down-type" class="list"></div>
+            <div id="move-down-date" class="list"></div>
+            <div id="move-down-delete" class="list"></div>
+
+            <button id="trash-files" class="hide">Trash</button>
+        </div>
+
+        <div id="file-options-buttons" class="hide">
+            <button value='' id='file-options-preview' class='file-options'>Preview</button>
+            <button value='' id='file-options-download' class='file-options'>Download</button>
+            <button value='' id='file-options-edit' class='file-options'>Edit</button>
+            <button value='close' id='file-options-close' class='file-options'>Close</button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+</html>
