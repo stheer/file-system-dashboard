@@ -1,0 +1,374 @@
+body {
+    background-color: #f7f7f7;
+    font-family: monospace;
+}
+
+#logo-img {
+    max-width:100%;
+    max-height:100%;
+}
+
+#sidebar {
+    height: 100%;
+    width: 20%;
+	position: fixed;
+	overflow: auto;
+	z-index: 1;
+	background-color: #033165;
+	top: 0;
+}
+
+#topbar {
+    top: 0;
+    height: 10%;
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+
+.topbar-button {
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+
+#sidebar-content {
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+}
+
+.sidebar-button {
+    color: #000000;
+    background-color: #BEBEBE;
+    border-style: groove;
+    border-color: #BEBEBE;
+    height: 10%;
+    width: 90%;
+    font-size: 15px;
+    margin: 5px 5px 5px 8px;
+}
+
+.sidebar-button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+#content {
+    position: relative;
+    height: 25px;
+    width: 100%;
+}
+
+#canvas {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: auto 5% auto 25%;
+}
+
+#library-top {
+    position: relative;
+}
+
+#dropdown {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#manipulate-buttons {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.create-buttons {
+    display: inline-block;
+    margin: 5px 75px 5px 75px;
+}
+
+#forms {
+    position: relative;
+    text-align: center;
+}
+
+#sub-folder-table {
+    position: relative;
+    text-align: left;
+    margin-left: 8%;
+    display: grid;
+}
+
+#sub-folder-table h4 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#sub-folder-table #sub-folder-list {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#sub-folder-table #sub-folder-trash {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+}
+
+#sub-folder-table #delete-folder {
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center;
+}
+
+.sub-folder-link {
+    background: none;
+    border: none;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: left;
+    margin-left: -1%;
+    display: block;
+    padding: 1px 0 1px 0;
+}
+
+.clicked {
+    background-color: #DCDCDC !important;
+    outline-color: #033165;
+    outline-width: thin;
+}
+
+.click-error {
+    background-color: #B22222 !important;
+}
+
+#file-div {
+    position: relative;
+}
+
+.file {
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: monospace;
+    font-size: 1em;
+    /*margin-left: -4%;*/
+    display: block;
+    padding: 1px 0 1px 0;
+}
+
+.type {
+    display: block;
+    padding: 1px 0 1px 0;
+}
+
+.date {
+    display: block;
+    padding: 1px 0 1px 0;
+}
+
+.trash-box {
+    display: block;
+    padding: 1px 0 1px 0;
+}
+
+#file-table {
+    margin-left: 8%;
+    position: relative;
+    display: grid;
+}
+
+#file-table #doc-title {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#file-table #doc-type {
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center;
+}
+
+#file-table #edit-date {
+    grid-column: 3;
+    grid-row: 1;
+    place-self: center;
+}
+
+#file-table #trash-files {
+    grid-column: 4;
+    grid-row: 1;
+    place-self: center;
+}
+
+#file-table #file-list {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#file-table #move-down-file {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#file-table #type-list {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+}
+
+#file-table #move-down-type {
+    grid-column: 2;
+    grid-row: 4;
+    place-self: center;
+}
+
+#file-table #date-list {
+    grid-column: 3;
+    grid-row: 2;
+    place-self: center;
+}
+
+#file-table #move-down-date {
+    grid-column: 3;
+    grid-row: 4;
+    place-self: center;
+}
+
+#file-table #delete-list {
+    grid-column: 4;
+    grid-row: 2;
+    place-self: center;
+}
+
+#file-table #move-down-delete  {
+    grid-column: 4;
+    grid-row: 4;
+    place-self: center;
+}
+
+#file-table #space-entry {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+.file-options {
+    display: inline-block;
+    margin: 2px 10px 2px 10px;
+    font-size: 11px;
+}
+
+#file-options-buttons {
+    position: relative;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#analytics-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.analytics-box {
+    display: inline-block;
+    width: 325px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    background-color: #808080;
+}
+
+#success-message {
+    color: green;
+    text-align: center;
+}
+
+#library-search-div {
+    position: relative;
+    display: inline-block;
+}
+
+#search-filter-options {
+    position: absolute;
+    display: inline-block;
+}
+
+#search-filter-text {
+    margin-left: 250px;
+    position: absolute;
+
+}
+
+.search {
+    position: relative;
+}
+
+.search-dropdown {
+    display: block;
+    margin: 6px 0 6px 0;
+}
+
+.top-level {
+    position: relative;
+}
+
+.additional-filter {
+    padding-left: 47px;
+}
+
+#add-search-filter {
+    background: none;
+    border: none;
+    display: inline;
+}
+
+.delete-filter {
+    background: none;
+    border: none;
+    display: inline;
+    margin-left: 8px;
+}
+
+#execute-query {
+    position: static;
+    margin-left: 750px;
+    margin-top: 50px;
+}
+
+#query-results-sql {
+    position: relative;
+    margin-top: 75px;
+}
+
+.SQL-select {
+    color: #0000FF;
+}
+
+.SQL-filter {
+    color: #FF0000;
+}
+
+.SQL-value {
+    color: #00cc00;
+}
+
+.hide {
+	display: none;
+}
+
+.visibility {
+	visibility: hidden;
+}
+
+.trash-box {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.folder-trash-box {
+  display: block;
+  margin-bottom: 5px;
+}
