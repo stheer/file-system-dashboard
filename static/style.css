@@ -140,6 +140,26 @@ body {
     outline-width: thin;
 }
 
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
+
+.sub-folder-link:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+.file:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
 .click-error {
     background-color: #B22222 !important;
 }
@@ -154,9 +174,11 @@ body {
     text-align: left;
     font-family: monospace;
     font-size: 1em;
-    /*margin-left: -4%;*/
     display: block;
     padding: 1px 0 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .type {
@@ -206,11 +228,15 @@ body {
 #file-table #file-list {
     grid-column: 1;
     grid-row: 2;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #file-table #move-down-file {
     grid-column: 1;
     grid-row: 4;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #file-table #type-list {
@@ -264,6 +290,14 @@ body {
     position: relative;
     text-align: center;
     margin: 1em auto;
+}
+
+#doc-type {
+    margin: 0 5px 0 5px;
+}
+
+#edit-date {
+    margin: 0 5px 0 5px;
 }
 
 #analytics-container {
@@ -365,7 +399,9 @@ body {
 
 .trash-box {
   display: block;
+  margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .folder-trash-box {
