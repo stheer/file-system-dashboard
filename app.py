@@ -11,7 +11,7 @@ app_host_ip = '0.0.0.0'
 app_host_port = 8000
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-@NVIapp.route('/public')
+@NVIapp.route('/')
 def index():
     return render_template('home.html')
 
@@ -27,7 +27,7 @@ def notes():
 def validate():
     args = request.json
     print(args)
-    return redirect('/public')
+    return redirect('/')
 
 def main():
     if not os.path.exists('log'):
