@@ -200,6 +200,7 @@ button:focus, input[type="button"]:focus {
     margin-left: 8%;
     position: relative;
     display: grid;
+    align-items: center;
 }
 
 #file-table #doc-title {
