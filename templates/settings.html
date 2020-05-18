@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% block content %}
+
+<div id="canvas">
+    <div id="manage-user-div">
+        <div id="add-user-header">
+            <h2>Manage Users</h2>
+        </div>
+
+        <h3 id="user-success-message" class="hide"></h3>
+
+        <div id="users-table">
+            <h4 id="user-title" class="user-header">Username</h4>
+            <h4 id="permissions-title" class="user-header">Permission</h4>
+
+            <div id="users"></div>
+            <div id="permissions"></div>
+            <div id="user-trash"></div>
+
+            <button id="trash-users" class="hide">Remove</button>
+
+            <div id="user-space-entry">
+                <br>
+            </div>
+
+            <input type="text" id="new-user-name" class="new-user-field" placeholder="new user"/>
+            <select id="new-user-permission" class="new-user-field">
+                <option value="" selected disabled hidden>permission</option>
+                <option value="Public">Public</option>
+                <option value="Team">Team</option>
+                <option value="Admin">Admin</option>
+            </select>
+
+            <button id="add-new-user" class="loadDisable" disabled>+</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+</html>

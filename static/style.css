@@ -23,8 +23,20 @@ body {
     height: 10%;
     width: 100%;
     margin: 0 5px 0 5px;
+    display: inline-block;
 }
 
+#settings-button {
+    border: none;
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+
+#back-button {
+    display: inline-block;
+    float: left;
+    margin: 5px 5px 5px 21%;
+}
 .topbar-button {
     float: right;
     margin: 5px 5px 5px 5px;
@@ -123,13 +135,17 @@ body {
     place-self: center;
 }
 
+.subfolder-button-div {
+    display: block;
+}
+
 .sub-folder-link {
     background: none;
     border: none;
     font-family: monospace;
     font-size: 1em;
     text-align: left;
-    display: block;
+    /*display: block;*/
     padding: 1px 0 1px 0;
 }
 
@@ -190,8 +206,107 @@ button:focus, input[type="button"]:focus {
     padding: 1px 0 1px 0;
 }
 
+.parent-folder {
+    display: block;
+    padding: 1px 0 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .trash-box {
     display: block;
+    padding: 1px 0 1px 0;
+}
+
+#add-user-button {
+    display: inline-block;
+}
+
+#add-user-header {
+    margin: auto 5% auto 25%;
+}
+
+h2 {
+    margin-left: 16%;
+}
+
+#users-table {
+    margin-left: 8%;
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+
+#users-table #user-title {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+}
+
+#users-table #permissions-title {
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center;
+}
+
+#users-table #trash-users {
+    grid-column: 3;
+    grid-row: 1;
+    place-self: center;
+}
+
+#users-table #users {
+    grid-column: 1;
+    grid-row: 2;
+    place-self: center;
+}
+
+#users-table #permissions {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+}
+
+#users-table #user-trash {
+    grid-column: 3;
+    grid-row: 2;
+    place-self: center;
+}
+
+#users-table #user-space-entry {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+#users-table #new-user-name {
+    grid-column: 1;
+    grid-row: 4;
+    place-self: center;
+}
+
+#users-table #new-user-permission {
+    grid-column: 2;
+    grid-row: 4;
+    place-self: center;
+}
+
+#users-table #add-new-user {
+    grid-column: 3;
+    grid-row: 4;
+    place-self: center;
+}
+
+#add-new-user {
+    background: none;
+    border: none;
+    display: inline;
+}
+
+.user-info {
+    display: block;
+    font-family: monospace;
     padding: 1px 0 1px 0;
 }
 
@@ -200,6 +315,7 @@ button:focus, input[type="button"]:focus {
     position: relative;
     display: grid;
     align-items: center;
+    grid-template-columns: auto auto;
 }
 
 #file-table #doc-title {
@@ -220,6 +336,12 @@ button:focus, input[type="button"]:focus {
 }
 
 #file-table #trash-files {
+    grid-column: 5;
+    grid-row: 1;
+    place-self: center;
+}
+
+#file-table #doc-parent-folder {
     grid-column: 4;
     grid-row: 1;
     place-self: center;
@@ -264,15 +386,29 @@ button:focus, input[type="button"]:focus {
 }
 
 #file-table #delete-list {
-    grid-column: 4;
+    grid-column: 5;
     grid-row: 2;
     place-self: center;
 }
 
-#file-table #move-down-delete  {
+#file-table #parent-folder-list {
     grid-column: 4;
+    grid-row: 2;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#file-table #move-down-delete  {
+    grid-column: 5;
     grid-row: 4;
     place-self: center;
+}
+
+#file-table #move-down-folder  {
+    grid-column: 4;
+    grid-row: 4;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #file-table #space-entry {
@@ -316,6 +452,11 @@ button:focus, input[type="button"]:focus {
 }
 
 #success-message {
+    color: green;
+    text-align: center;
+}
+
+#user-success-message {
     color: green;
     text-align: center;
 }
@@ -407,4 +548,17 @@ button:focus, input[type="button"]:focus {
 .folder-trash-box {
   display: block;
   margin-bottom: 5px;
+}
+
+select.subFolder-permission {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
+select.subFolder-permission::-ms-expand {
+  display: none;
+  background-color: transparent;
+  border: none;
 }
