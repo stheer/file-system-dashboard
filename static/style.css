@@ -111,6 +111,7 @@ body {
     text-align: left;
     margin-left: 8%;
     display: grid;
+    grid-template-columns: auto auto;
 }
 
 #sub-folder-table h4 {
@@ -121,12 +122,14 @@ body {
 #sub-folder-table #sub-folder-list {
     grid-column: 1;
     grid-row: 2;
+    overflow: hidden;
 }
 
 #sub-folder-table #sub-folder-trash {
     grid-column: 2;
     grid-row: 2;
     place-self: center;
+    margin-left: 20px;
 }
 
 #sub-folder-table #delete-folder {
@@ -146,7 +149,10 @@ body {
     font-size: 1em;
     text-align: left;
     /*display: block;*/
-    padding: 1px 0 1px 0;
+    padding: 1.5px 0 1.5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .clicked {
@@ -190,7 +196,7 @@ button:focus, input[type="button"]:focus {
     font-family: monospace;
     font-size: 1em;
     display: block;
-    padding: 1px 0 1px 0;
+    padding: 1.5px 0 1.5px 0;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -198,25 +204,29 @@ button:focus, input[type="button"]:focus {
 
 .type {
     display: block;
-    padding: 1px 0 1px 0;
+    padding: 1.5px 0 1.5px 0;
 }
 
 .date {
     display: block;
-    padding: 1px 0 1px 0;
+    padding: 1.5px 0 1.5px 0;
 }
 
 .parent-folder {
     display: block;
-    padding: 1px 0 1px 0;
+    padding: 1.5px 0 1.5px 0;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.trash-box {
+.trash-box { 
     display: block;
     padding: 1px 0 1px 0;
+}
+
+input[type=checkbox] {
+    transform: scale(.9);
 }
 
 #add-user-button {
