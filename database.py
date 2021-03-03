@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('mysql+pymysql://michaelbeer:NVIRock5!@208.97.163.43/nvi_km_dashboard', convert_unicode=True)
+engine = create_engine('mysql+pymysql://michaelbeer:NVIdbRock5!@208.97.163.43/nvi_km_dashboard', convert_unicode=True)
 Base = declarative_base()
 Base.metadata.reflect(engine)
 
