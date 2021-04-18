@@ -24,6 +24,9 @@ Folder permissions can be added. There are three levels of permissions: 'Admin',
 <img src="app-example-images/folder-permission.png">
 <img src="app-example-images/settings.png">
 
+Select files can be previewed in the browser, downloaded directly to the client's system, or edited in the browser (given adequate user permissions).
+<img src="app-example-images/file-clickede.png">
+
 Files can be searched for using a user-selected list of criteria (file name, file contents, file type, folder, modified after date). Searches can therefore be as specific as the user desires. Permissioning still applies to files and folders returned in the search.
 <img src="app-example-images/search.png">
 
