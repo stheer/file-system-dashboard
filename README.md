@@ -1,6 +1,6 @@
 # NVIDashboard
 
-NVITacticsDB is a complete file-system and user-interface supporting all major file-system functionalities, including permissioning. The app was built and is currently in use by Nonviolence International - it is a means of displaying relevant files to entities outside of the organization (e.g. potential donors), as well as serving as knowledge management system. 
+NVITacticsDB is a complete file-system and user-interface supporting all major file-system functionalities, including permissioning. The app was built and is currently in use by Nonviolence International - it is a means of displaying relevant files to entities outside of the organization (e.g. potential donors), as well as serving as a knowledge management system. 
 
 The app runs on Flask and SQLAlchemy with Google Drive API integration. The deployed application can be found at https://www.km.nonviolenceinternational.net/ but requires a nonviolenceinternational.net email to access.
 
