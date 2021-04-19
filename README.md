@@ -9,7 +9,7 @@ The app runs on Flask and SQLAlchemy with Google Drive API integration. The depl
 Site Login
 <img src="app-example-images/home-login.png">
 
-Folder and File System List: Displays subfolder list and contained files. Subfolders can be selected and subsequent subfolders/files are displayed. The subfolder list collapses when a higher-level subfolder is selected. Functionality is therefore analogous to a typical file system.
+Folder and File System List: Displays subfolder list and contained files. Subfolders can be selected and subsequent subfolders/files are displayed. The subfolder list collapses when a higher-level subfolder is selected. Functionality is analogous to a typical file system.
 <img src="app-example-images/home-folder.png">
 
 Folders and Files can be trashed
