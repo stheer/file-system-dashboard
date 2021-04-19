@@ -16,7 +16,7 @@ Folders and Files can be trashed
 <img src="app-example-images/trash-folder.png">
 <img src="app-example-images/trash-file.png">
 
-Folder and Files can be added
+Folder and Files can be added to selected folder
 <img src="app-example-images/new-folder.png">
 <img src="app-example-images/new-file.png">
 
